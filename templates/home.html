@@ -1,0 +1,29 @@
+{% extends  "base.html" %} <!This extends the css and javascript from base.html>
+
+
+{% block content %}
+    <div class="card-wrapper">
+        <div class="card">
+            <h1 class="center">Create an Account</h1>
+
+
+            <form name="signup_form">
+            
+                <label for="name">Name</label>
+                <input type="text" name="name" class="feild"  style="width: 100%;" required><! This "name" is given to user in models.py>
+
+                <label for="name">Email</label>
+                <input type="email" name="email" class="feild" style="width: 100%;" required><! This "email" is given to user in models.py>
+
+                <label for="name">Password</label>
+                <input type="password" name="password" class="feild" style="width: 100%;" required><! This "password" is given to user in models.py>
+                
+                <p class="error error--hidden"></p>
+
+                <input type="submit" value="Sign Up" class="btn"> 
+            </form>
+
+        </div>
+    </div>
+
+{% endblock %}
