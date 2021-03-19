@@ -1,3 +1,4 @@
+# Import Flask, jsonify, and request
 from flask import Flask, jsonify, request
 # Encrypt password
 from passlib.hash import pbkdf2_sha256
